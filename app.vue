@@ -7,6 +7,8 @@ useServerSeoMeta({
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
 })
+const counter = useState('counter')
+const color = useColor()
 
 // reactive title 
 // const data = useFetch(() => $fetch('/api/example'))
@@ -20,6 +22,11 @@ useServerSeoMeta({
 <template>
   <nav>
     <ul>
+      <h1>{{ counter }}</h1>
+      <p>Current color: {{ color }}</p>
+      <li>
+        <NuxtLink to="/todos">todos</NuxtLink>
+      </li>
       <li>
         <NuxtLink to="/users">Users</NuxtLink>
       </li>
