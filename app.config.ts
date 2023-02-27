@@ -1,4 +1,4 @@
-export default {
+export default defineAppConfig({
   baseURL: "/",
   buildAssetsDir: "/_nuxt/",
   pageTransition: { name: 'page', mode: 'out-in' },
@@ -18,4 +18,4 @@ export default {
     script: [],
     noscript: [],
   }
-};
+});
