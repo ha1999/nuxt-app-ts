@@ -5,10 +5,19 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "start": "node .output/server/index.mjs",
+    "serve": "serve dist/",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^18.14.1",
-    "nuxt": "^3.2.2"
+    "nuxt": "^3.2.2",
+    "husky": "^8.0.0"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html}": [
+      "pnpm lintfix"
+    ]
   }
 }
