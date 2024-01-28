@@ -1,5 +1,11 @@
 {
-  "cSpell.words": ["antfu", "lintfix", "Nuxt", "nuxtjs"],
+  "cSpell.words": [
+    "antfu",
+    "commitlint",
+    "lintfix",
+    "Nuxt",
+    "nuxtjs"
+  ],
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
