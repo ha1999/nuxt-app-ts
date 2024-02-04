@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <NuxtPage />
+    <p-button label="Check" />
+    <app-auto-complete />
   </div>
 </template>
